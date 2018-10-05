@@ -27,12 +27,15 @@ public class RecipeViewAdapter extends RecyclerView.Adapter<RecipeViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecipeViewHolder recipeViewHolder, int position) {
+    public void onBindViewHolder(@NonNull RecipeViewHolder recipeViewHolder, int position)
+    {
+
+        RecipeModel model = recipeCollection.get(position);
+        recipeViewHolder.bindView(model);
+
 
     }
 
     @Override
-    public int getItemCount() {
-        return 0;
-    }
+    public int getItemCount() {return recipeCollection.size();}
 }

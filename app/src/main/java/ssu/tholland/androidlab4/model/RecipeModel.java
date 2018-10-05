@@ -5,6 +5,7 @@ import java.util.List;
 public class RecipeModel {
 
     private String recipeName;
+    private int rating;
 
     private int totalTimeInSeconds;
 
@@ -14,6 +15,7 @@ public class RecipeModel {
     public String getRecipeName() {
         return recipeName;
     }
+    public int getRating() {return rating; }
 
     public int getTotalTimeInSeconds() {
         return totalTimeInSeconds;
