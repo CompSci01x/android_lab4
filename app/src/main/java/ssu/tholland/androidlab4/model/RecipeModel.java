@@ -15,6 +15,11 @@ public class RecipeModel {
         return recipeName;
     }
 
+    private String rating;
+
+    public String getRating() {
+        return rating;
+    }
     public int getTotalTimeInSeconds() {
         return totalTimeInSeconds;
     }
