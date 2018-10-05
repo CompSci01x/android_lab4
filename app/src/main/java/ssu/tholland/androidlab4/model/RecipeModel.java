@@ -4,24 +4,29 @@ import java.util.List;
 
 public class RecipeModel {
 
+    /*private List<String> imageUrlsBySize;
+
+    private String sourceDisplayName;
+
+    private List<String> ingredients;
+
+    private String id;*/
+
+    private List<String> smallImageUrls;
+
     private String recipeName;
 
     private int totalTimeInSeconds;
 
-    private List<String> smallImageUrls;
+    private int rating;
 
+    public int getRating() { return rating; }
 
-    public String getRecipeName() {
-        return recipeName;
-    }
+    public String getRecipeName() { return recipeName; }
 
-    public int getTotalTimeInSeconds() {
-        return totalTimeInSeconds;
-    }
+    public int getTotalTimeInSeconds() { return totalTimeInSeconds; }
 
-    public List<String> getSmallImageUrls() {
-        return smallImageUrls;
-    }
+    public List<String> getSmallImageUrls() { return smallImageUrls; }
 }
 
 
