@@ -10,10 +10,13 @@ public class RecipeModel {
 
     private List<String> smallImageUrls;
 
+    private int rating;
+
 
     public String getRecipeName() {
         return recipeName;
     }
+    public int getRating() { return rating;}
 
     public int getTotalTimeInSeconds() {
         return totalTimeInSeconds;
