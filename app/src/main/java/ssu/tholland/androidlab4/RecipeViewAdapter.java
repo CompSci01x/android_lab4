@@ -28,11 +28,14 @@ public class RecipeViewAdapter extends RecyclerView.Adapter<RecipeViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull RecipeViewHolder recipeViewHolder, int position) {
-
+        //Get model at the specified position in the list
+        RecipeModel model = recipeCollection.get(position);
+        //put the data of the model in the viewHolder
+        recipeViewHolder.bindView(model);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return recipeCollection.size();
     }
 }
