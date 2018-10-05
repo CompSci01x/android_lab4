@@ -8,6 +8,8 @@ public class RecipeModel {
 
     private int totalTimeInSeconds;
 
+    private int rating;
+
     private List<String> smallImageUrls;
 
 
@@ -18,6 +20,8 @@ public class RecipeModel {
     public int getTotalTimeInSeconds() {
         return totalTimeInSeconds;
     }
+
+    public int getRating() { return rating; }
 
     public List<String> getSmallImageUrls() {
         return smallImageUrls;
