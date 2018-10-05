@@ -12,11 +12,12 @@ import ssu.tholland.androidlab4.model.RecipeModel;
 
 public class RecipeViewAdapter extends RecyclerView.Adapter<RecipeViewHolder> {
 
-    private List<RecipeModel> recipeCollection;
-
     public RecipeViewAdapter(List<RecipeModel> collection) {
         recipeCollection = collection;
     }
+
+    private List<RecipeModel> recipeCollection;
+
 
     @NonNull
     @Override
@@ -28,11 +29,12 @@ public class RecipeViewAdapter extends RecyclerView.Adapter<RecipeViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull RecipeViewHolder recipeViewHolder, int position) {
-
+        RecipeModel model = recipeCollection.get(position);
+        recipeViewHolder.bindView(model);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return recipeCollection.size();
     }
 }
