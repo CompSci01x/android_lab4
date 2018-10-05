@@ -1,9 +1,12 @@
 package ssu.tholland.androidlab4.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class RecipeResponse {
 
+    @SerializedName("matches")  // P1S7 add annotation
     private List<RecipeModel> recipes;
 
     public List<RecipeModel> getRecipes() {
