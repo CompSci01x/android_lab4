@@ -1,14 +1,22 @@
 package ssu.tholland.androidlab4.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class RecipeResponse {
 
+    //private List<RecipeModel> recipes;
+    @SerializedName("matches")
     private List<RecipeModel> recipes;
 
     public List<RecipeModel> getRecipes() {
         return recipes;
     }
+
+//    public List<RecipeModel> getResponse() {
+  //      return response;
+   // }
 }
 
 
