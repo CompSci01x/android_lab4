@@ -19,12 +19,12 @@ public class RecipeModel {
         return recipeName;
     }
 
-    private String rating;
+  /*  private String rating;
 
     public String getRating() {
         return rating;
     }
-    public int getTotalTimeInSeconds() {
+*/    public int getTotalTimeInSeconds() {
         return totalTimeInSeconds;
     }
 
