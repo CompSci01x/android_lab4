@@ -5,11 +5,13 @@ import java.util.List;
 public class RecipeModel {
 
     private String recipeName;
+    private String recipeRating;
 
     private int totalTimeInSeconds;
 
     private List<String> smallImageUrls;
 
+    public String getRating() {return recipeRating;}
 
     public String getRecipeName() {
         return recipeName;
