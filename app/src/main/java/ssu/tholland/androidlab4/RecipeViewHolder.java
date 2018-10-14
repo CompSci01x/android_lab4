@@ -18,8 +18,12 @@ public class RecipeViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void bindView(RecipeModel model) {
-        //Left off here******************************************
-        itemNameTextView.setText(String.format("Rating: %d / 5"));
+
+        //itemNameTextView.setText(String.format("Name: %d / 5", itemNameTextView));
+        //itemRatingTextView.setText(String.format("Rating: %d / 5", itemRatingTextView));
+        itemNameTextView.setText(model.getRecipeName());
+        itemRatingTextView.setText(String.format("Rating: %d / 5", model.getRating()));
+
 
     }
 }
