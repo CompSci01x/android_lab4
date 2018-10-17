@@ -9,14 +9,23 @@
     android:padding="1dp"
     tools:context=".RecipeViewHolder">
 
+    <ImageView
+        android:id="@+id/recycler_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:adjustViewBounds="false" />
+
     <TextView
         android:id="@+id/recycler_item_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_margin"/>
 
     <TextView
         android:id="@+id/recycler_item_rating"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_margin"/>
 
 </LinearLayout>
