@@ -14,9 +14,15 @@ public class RecipeViewHolder extends RecyclerView.ViewHolder {
     public RecipeViewHolder(View itemView) {
         super(itemView);
 
+        //not sure about this:
+        itemView.findViewById(R.id.recycler_view);
+
     }
 
     public void bindView(RecipeModel model) {
 
+        //not sure about this either:
+        itemNameTextView.setText(model.getRecipeName());
+        itemRatingTextView.setText(String.format("Rating: %i / 5",model.getTotalTimeInSeconds()));
     }
 }

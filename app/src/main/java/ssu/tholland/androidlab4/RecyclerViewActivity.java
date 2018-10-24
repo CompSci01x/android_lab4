@@ -37,6 +37,9 @@ public class RecyclerViewActivity extends AppCompatActivity {
                 task.setListener(new RecipeSearchAsyncTask.RecipeCallbackListener() {
                     @Override
                     public void onRecipeCallback(List<RecipeModel> models) {
+                        //not sure about this
+                        RecipeViewAdapter adapter = new RecipeViewAdapter(models);
+                        recyclerView.setAdapter(adapter);
 
                     }
                 });
