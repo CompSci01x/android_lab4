@@ -34,7 +34,7 @@ public class RecipeSearchAsyncTask extends AsyncTask<String, Void, List<RecipeMo
         Request request = new Request.Builder()
             .url(url)
             .build();
-
+        System.out.print(request);
         try {
             Response response = client.newCall(request).execute();
             if (response != null) {
