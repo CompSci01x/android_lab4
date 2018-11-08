@@ -49,10 +49,12 @@ public class RecipeSearchAsyncTask extends AsyncTask<String, Void, List<RecipeMo
 
     @Override
     protected void onPostExecute(List<RecipeModel> recipes) {
+
         listener.onRecipeCallback(recipes);
     }
 
     public void setListener(RecipeCallbackListener listener) {
+
         this.listener = listener;
     }
 
