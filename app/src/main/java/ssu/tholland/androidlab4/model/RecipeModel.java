@@ -10,6 +10,12 @@ public class RecipeModel {
 
     private List<String> smallImageUrls;
 
+    private int rating;
+
+    public int getRating() {
+        return rating;
+    }
+
 
     public String getRecipeName() {
         return recipeName;
