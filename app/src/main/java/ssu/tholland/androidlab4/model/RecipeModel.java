@@ -12,7 +12,11 @@ public class RecipeModel {
 
     private int rating;
 
-    public int getRating(){ return rating;}
+
+    public int getRating() {
+        return rating;
+    }
+
 
     public String getRecipeName() {
         return recipeName;

@@ -15,9 +15,8 @@ public class RecipeParser {
         Gson gson = new Gson();
         // 2. parse the `json` response (into a RecipeResponse)
         RecipeResponse response = gson.fromJson(json, RecipeResponse.class);
-        // 3. return a List o  f RecipeModel instead of `null`
+        // 3. return a List of RecipeModel instead of `null`
         List<RecipeModel> recipes = response.getRecipes();
         return recipes;
-        // on step 17
-    }
+
 }
