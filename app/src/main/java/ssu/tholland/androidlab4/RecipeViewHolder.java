@@ -16,13 +16,12 @@ public class RecipeViewHolder extends RecyclerView.ViewHolder {
 
         itemNameTextView = itemView.findViewById(R.id.recycler_item_name);
         itemRatingTextView = itemView.findViewById(R.id.recycler_item_rating);
-
     }
 
     public void bindView(RecipeModel model) {
 
-        itemNameTextView.setText("recipeName");
-        String.format("Rating: %i / 5", itemRatingTextView);
+        itemNameTextView.setText(model.getRecipeName());
+        itemRatingTextView.setText(String.format("Rating: %i / 5", itemRatingTextView));
 
     }
 }
