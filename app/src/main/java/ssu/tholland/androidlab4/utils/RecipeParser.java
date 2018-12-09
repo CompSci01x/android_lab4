@@ -18,5 +18,5 @@ public class RecipeParser {
         // 3. return a List of RecipeModel instead of `null`
         List<RecipeModel> recipes = response.getRecipes();
         return recipes;
-    }
+
 }

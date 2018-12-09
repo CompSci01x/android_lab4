@@ -12,6 +12,7 @@ public class RecipeModel {
 
     private int rating;
 
+
     public int getRating() {
         return rating;
     }
