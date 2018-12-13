@@ -1,8 +1,7 @@
 package ssu.tholland.androidlab4.model;
 
 
-import com.google.gson.annotations.SerializeName;
-
+import com.google.gson.annotations.SerializedName;
 
 
 import java.util.List;
