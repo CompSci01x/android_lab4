@@ -11,15 +11,10 @@ public class RecipeParser {
 
     public static List<RecipeModel> recipesFromJson(String json) {
 
-        // 1. create a new Gson instance
         Gson gson = new Gson();
         RecipeResponse response = gson.fromJson(json, RecipeResponse.class);
         List<RecipeModel> recipes = response.getRecipes();
 
-        // 2. parse the `json` response (into a RecipeResponse)
-
-        // 3. return a List of RecipeModel instead of `null`
-
-        return null;
+        return recipes;
     }
 }

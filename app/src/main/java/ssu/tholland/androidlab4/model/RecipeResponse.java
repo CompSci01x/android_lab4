@@ -6,7 +6,7 @@ import java.util.List;
 
 public class RecipeResponse {
 
-    @SerializedName("json_key_name")
+    @SerializedName("matches")
     private List<RecipeModel> recipes;
 
     public List<RecipeModel> getRecipes() {
