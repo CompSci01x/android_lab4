@@ -19,4 +19,6 @@ public class RecipeParser {
         List<RecipeModel> recipes = response.getRecipes();
         return recipes;
 
+
+    }
 }
